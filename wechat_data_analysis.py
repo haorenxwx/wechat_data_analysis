@@ -32,3 +32,6 @@ for i in range(0,len(total)):
 	siglist.append(signature)
 text="".join(siglist)
 
+import jieba
+wordlist=jieba.cut(text,cut_all=True)
+word_space_split=" ".join(wordlist)
